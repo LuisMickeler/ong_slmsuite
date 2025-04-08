@@ -1,18 +1,22 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
-[project]
+[tool.poetry]
 name = "slmsuite"
+version = "0.1.0"
+description = "SLM Suite for spatial light modulator simulations"
+authors = ["Luis Mickeler <lmickeler@phys.ethz.ch>"]
 readme = "README_PYPI.md"
-requires-python = ">=3.8"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
-dynamic = ["version", "dependencies", "description", "authors"]
+license = "MIT"
+homepage = "https://github.com/slmsuite/slmsuite"
+documentation = "https://slmsuite.readthedocs.io/en/latest/"
 
-[project.urls]
-"Homepage" = "https://github.com/slmsuite/slmsuite"
-"Documentation" = "https://slmsuite.readthedocs.io/en/latest/"
+[tool.poetry.dependencies]
+python = ">=3.8"
+numpy = "*"
+scipy = "*"
+opencv-python = "*"
+matplotlib = "*"
+h5py = "*"
+tqdm = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
