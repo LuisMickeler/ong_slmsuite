@@ -7,7 +7,7 @@
 
 # jupyter
 *.ipynb_checkpoints/
-*.ipynb
+#*.ipynb
 
 # macos
 *.DS_Store

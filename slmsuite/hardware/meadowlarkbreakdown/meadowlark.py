@@ -11,7 +11,7 @@ import os
 import ctypes
 import warnings
 
-from slm import SLM
+from .slm import SLM
 
 DEFAULT_SDK_PATH = "C:\\Program Files\\Meadowlark Optics\\Blink 1920 HDMI\\"
 
