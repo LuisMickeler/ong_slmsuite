@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "slmsuite"
+name = "optical_nn_hardware"
 version = "0.1.0"
 description = "SLM Suite for spatial light modulator simulations"
 authors = ["Luis Mickeler <lmickeler@phys.ethz.ch>"]
